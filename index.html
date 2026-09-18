@@ -68,14 +68,26 @@
     }
 
     .schedule-item {
-        font-size: 1.15em;
-        margin: 0.9em 0;
+        font-size: 1.5em;
+        margin: 0.8em 0;
         line-height: 1.5;
+        text-align: left;
+        color: rgb(41, 21, 176);
+        font-weight: 600;
     }
 
-    .schedule-item strong {
-        color: darkblue;
-        font-size: 1.12em;
+    .schedule-entry {
+        display: block;
+        font-size: 1.5em;
+        margin: 0.8em 0;
+        line-height: 1.5;
+        text-align: left;
+        color: rgb(41, 21, 176);
+        font-weight: 600;
+    }
+
+    .schedule-entry .time {
+        font-weight: 600;
     }
 
   </style>
@@ -102,11 +114,11 @@
 <hr>
 
 <h2>Schedule</h2>
-<p class="schedule-item"><strong>12:30 pm - 1:15 pm: Cassandra Marcussen</strong> Introduction to Quasirandomness</p>
-<p class="schedule-item"><strong>1:20 pm - 1:45 pm: Kiril Bangachev</strong></p>
-<p class="schedule-item"><strong>1:45 pm - 2:10 pm: Ted Pyne</strong></p>
-<p class="schedule-item"><strong>2:10 pm - 2:35 pm: Or Zamir</strong></p>
-<p class="schedule-item"><strong>2:35 pm - 3:00 pm: Esty Kelman</strong></p>
+<p class="schedule-item">12:30 pm - 1:15 pm: Cassandra Marcussen<span style="color:black;">: Introduction to Quasirandomness</span></p>
+<p class="schedule-item">1:20 pm - 1:45 pm: Kiril Bangachev</p>
+<p class="schedule-item">1:45 pm - 2:10 pm: Ted Pyne</p>
+<p class="schedule-item">2:10 pm - 2:35 pm: Or Zamir</p>
+<p class="schedule-item">2:35 pm - 3:00 pm: Esty Kelman</p>
 
 </body>
 </html>
