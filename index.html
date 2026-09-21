@@ -90,6 +90,27 @@
         font-weight: 600;
     }
 
+    summary {
+        cursor: pointer;
+        font-weight: bold;
+        color: #1f2430;
+    }
+
+    details {
+        margin: 0.25em 0 1em 0;
+        color: #1f2430;
+    }
+
+    details[open] summary {
+        margin-bottom: 0.3em;
+    }
+
+    details p {
+        margin: 0.5em 0 0 1.25em;
+        font-size: 1em;
+        color: black;
+    }
+
   </style>
 <body>
 
@@ -114,11 +135,26 @@
 <hr>
 
 <h2>Schedule</h2>
-<p class="schedule-item">12:30 pm - 1:15 pm: Cassandra Marcussen<span style="color:black;"> Tutorial on Quasirandomness</span></p>
-<p class="schedule-item">1:20 pm - 1:45 pm: Kiril Bangachev</p>
-<p class="schedule-item">1:45 pm - 2:10 pm: Ted Pyne</p>
-<p class="schedule-item">2:10 pm - 2:35 pm: Or Zamir</p>
-<p class="schedule-item">2:35 pm - 3:00 pm: Esty Kelman</p>
+<details>
+  <summary class="schedule-item">12:30 pm - 1:15 pm: Cassandra Marcussen<span style="color:black;"> Tutorial on Quasirandomness</span></summary>
+  <p><strong>Abstract:</strong> TBD</p>
+</details>
+<details>
+  <summary class="schedule-item">1:20 pm - 1:45 pm: Kiril Bangachev<span style="color:black;"> TBD</span></summary>
+  <p><strong>Abstract:</strong> TBD</p>
+</details>
+<details>
+  <summary class="schedule-item">1:45 pm - 2:10 pm: Ted Pyne<span style="color:black;"> TBD</span></summary>
+  <p><strong>Abstract:</strong> TBD</p>
+</details>
+<details>
+  <summary class="schedule-item">2:10 pm - 2:35 pm: Or Zamir<span style="color:black;"> TBD</span></summary>
+  <p><strong>Abstract:</strong> TBD</p>
+</details>
+<details>
+  <summary class="schedule-item">2:35 pm - 3:00 pm: Esty Kelman<span style="color:black;"> TBD</span></summary>
+  <p><strong>Abstract:</strong> TBD</p>
+</details>
 
 </body>
 </html>
