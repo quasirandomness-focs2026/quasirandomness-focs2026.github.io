@@ -6,7 +6,7 @@
 <html>
   <style>
     body {
-        margin: 5% auto;
+      margin: 2.5% auto;
         max-width: 1000px;
         padding: 0 24px;
         font-family: "Segoe UI", Arial, sans-serif;
@@ -18,7 +18,7 @@
     hr {
       border: none;
       border-top: 1px solid #ddd7f7;
-      margin: 1.5em 0;
+      margin: 1em 0;
     }
 
     li {
@@ -39,7 +39,7 @@
         color: rgb(41, 21, 176);
         font-size: 1.2em;
         line-height: 1.5;
-        margin: 0.8em 0;
+        margin: 0.5em 0;
         font-weight: 600;
     }
 
@@ -106,9 +106,13 @@
     }
 
     details p {
-        margin: 0.5em 0 0 1.25em;
+      margin: 0.35em 0 0 1.25em;
         font-size: 1em;
         color: black;
+    }
+
+    #schedule {
+      margin-top: 0.5em;
     }
 
   </style>
@@ -124,17 +128,13 @@
 <hr>
 
 <h2>Overview</h2>
-<p>Random graphs are both useful and broadly studied within theoretical computer science, in large part because they possess a broad array of structural properties with high probability, including a large spectral gap, the correct number of copies of every fixed subgraph, and uniformly spread edges.</p>
+<p>Random graphs typically exhibit useful structure, including spectral gaps, predictable subgraph counts, and uniformly distributed edges. Remarkably, many such properties are equivalent. Chung, Graham, and Wilson (Combinatorica 1989) showed that a wide range of conditions possessed by random graphs, including having the correct number of 4-cycles, characterize what are now called quasirandom graphs.</p>
 
-<p>Remarkably, many of these deterministic properties are essentially equivalent. The seminal work of Chung, Graham, and Wilson (Combinatorica 1989) established the equivalence of a broad collection of random-like properties, including the strikingly simple condition of having the correct number of 4-cycles. Graphs satisfying these conditions are called "quasirandom graphs."</p>
-
-<p>This workshop is motivated by the algorithmic principle that structure possessed by random instances can often be certified using a small collection of deterministic statistics, such as degrees, codegrees, or small subgraph counts. Such certificates can help algorithms recognize tractable average-case instances, distinguish random graph models, infer global structure from local observations, and translate counting estimates into complexity consequences. Recent results have developed this principle independently across several areas of theoretical computer science, but there is not yet a unifying framework explaining which quasirandom conditions are most useful for which computational tasks.</p>
-
-<p>The workshop will introduce and explore modern algorithmic perspectives on quasirandomness, with the goal of understanding how recent definitions, techniques, and applications relate to one another.</p>
+<p>This workshop will explore the algorithmic principle that a few deterministic statistics, such as degrees, codegrees, or small-subgraph counts, can certify random-like structure. These certificates can help algorithms recognize tractable instances, distinguish random models, and infer global structure from local information. Our goal is to connect recent definitions, techniques, and applications and understand which notions of quasirandomness are most useful for different computational tasks.</p>
 
 <hr>
 
-<h2>Schedule</h2>
+<h2 id="schedule">Schedule</h2>
 <details>
   <summary class="schedule-item">12:30 - 1:15: Cassandra Marcussen<span style="color:black;"> Tutorial on Quasirandomness</span></summary>
   <p><strong>Abstract:</strong> In this tutorial, we introduce the theory of quasirandomness, with a particular focus on quasirandom graphs. In 1987, Thomason introduced the notion of a "jumbled" graph, capturing structural properties characteristic of random graphs. In 1989, Chung, Graham, and Wilson developed a unifying theory of quasirandom graph properties and their equivalences. We will begin by understanding these properties, the surprising relationships between them, and the simple conditions that characterize quasirandomness. We will then explore their implications, including connections to graph regularity. Finally, we will turn to quasirandomness beyond graphs, discussing analogous theories in other settings, such as groups and permutations.
