@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8" />
     <meta name="google-site-verification" content="RxXNGQ85Dbc4gdkR_Bqxh47zg2fO7qMhTdMBxIX2u_4" />
     <title>Quasirandomness FOCS 2026</title>
   </head>
@@ -102,6 +103,10 @@
         color: #1f2430;
     }
 
+    details:last-of-type {
+      margin-bottom: 3em;
+    }
+
     details[open] summary {
         margin-bottom: 0.3em;
     }
@@ -143,22 +148,25 @@
 </details>
 <details>
   <summary class="schedule-item">1:20 - 1:45: Kiril Bangachev<span style="color:black;"> Graph Quasirandomness for Hypothesis Testing of Stochastic Block Models</span></summary>
-  <p><strong>Authors:</strong> Kiril Bangachev and Guy Bresler</p>
   <p><strong>Abstract:</strong> The celebrated theorem of Chung, Graham, and Wilson on quasirandom graphs implies that if the 4-cycle and edge counts in a graph <strong>G</strong> are both close to their typical number in <strong>G(n,1/2)</strong>, then this also holds for the counts of subgraphs isomorphic to <strong>H</strong> for any <strong>H</strong> of constant size. We prove a similar statement where the notion of close is whether the given (signed) subgraph count can be used as a test between <strong>G(n,1/2)</strong> and a stochastic block model <strong>SBM</strong>.</p>
   <p>Quantitatively, this is related to approximately maximizing <strong>H &rarr; |&Phi;(H)|<sup>1/|V(H)|</sup></strong> where <strong>&Phi;(H)</strong> is the Fourier coefficient of <strong>SBM</strong>, indexed by subgraph <strong>H</strong>. This formulation turns out to be equivalent to approximately maximizing the partition function of a spin model over an alphabet given by the community labels in <strong>SBM</strong>.</p>
   <p>We resolve the approximate maximization when <strong>SBM</strong> satisfies one of four conditions: 1) the probability of an edge between any two vertices in different communities is exactly 1/2; 2) the probability of an edge between two vertices from any two communities is at least 1/2 (this case is also covered in a recent work of Yu, Zadik, and Zhang); 3) the probability of belonging to any given community is at least <strong>c</strong> for some universal constant <strong>c &gt; 0</strong>; 4) <strong>SBM</strong> has two communities. In each of these cases, we show that there is an approximate maximizer of <strong>H &rarr; |&Phi;(H)|<sup>1/|V(H)|</sup></strong> which is a star or a 4-cycle. This implies that if there exists a constant-degree polynomial test distinguishing <strong>G(n,1/2)</strong> and <strong>SBM</strong>, then the two distributions can also be distinguished via the signed count of a star or a 4-cycle. We conjecture that the same holds true for distinguishing <strong>G(n,1/2)</strong> and any graphon if we also add triangles.</p>
+  <p><strong>Authors:</strong> Kiril Bangachev and Guy Bresler</p>
 </details>
 <details>
-  <summary class="schedule-item">1:45 - 2:10: Ted Pyne<span style="color:black;"> TBD</span></summary>
-  <p><strong>Abstract:</strong> TBD</p>
+  <summary class="schedule-item">1:45 - 2:10: Ted Pyne<span style="color:black;"> k-Coloring in Average Sublinear Time via Quasirandomness</span></summary>
+  <p><strong>Abstract:</strong> We show that k-coloring a k-colorable graph can be done in expected time O(nk). Since almost all such graphs have &Omega;(n^2) edges, this is an average-case sublinear algorithm for a natural NP-complete problem. It turns out that a key to this algorithm is the ability to certify (with zero error) that a small random graph is uniquely k-colorable. I'll discuss the overall algorithm, and some details of how graph quasirandomness gives the key step.</p>
 </details>
 <details>
   <summary class="schedule-item">2:10 - 2:35: Or Zamir<span style="color:black;"> TBD</span></summary>
   <p><strong>Abstract:</strong> TBD</p>
 </details>
 <details>
-  <summary class="schedule-item">2:35- 3:00: Esty Kelman<span style="color:black;"> TBD</span></summary>
-  <p><strong>Abstract:</strong> TBD</p>
+  <summary class="schedule-item">2:35- 3:00: Esty Kelman<span style="color:black;"> Sparse Graph Counting and Applications to Systems of Linear Forms</span></summary>
+  <p><strong>Abstract:</strong> The graph counting lemma of Chung, Graham, and Wilson (Combinatorica 1988) is a fundamental result in combinatorics, which states that if a large graph is pseudorandom (in a specific sense that we will define), then the number of copies of any small graph $H$ in $G$ is close to what is expected from a random graph of the same density. However, this result is only nontrivial when $G$ is a dense graph. In this work, we obtain a counting lemma that works in the sparse setting and is well-suited for the density increment arguments in additive combinatorics. In a recent remarkable breakthrough, Kelley and Meka (FOCS 2023) obtained a strong upper bound on the density of sets of integers without nontrivial three-term arithmetic progressions. We combine our counting lemma with other ideas to establish Kelley--Meka type bounds for all linear patterns defined by translation-invariant systems of binary linear forms, i.e., each form depends on exactly two variables. In particular, we obtain strong bounds for the Turan problem in Abelian Cayley sum graphs, i.e., an upper bound on the maximum edge density of an Abelian Cayley sum graph with a clique of a given size. To prove our results, we employ some of the recent technology developed by Kelley and Meka and also the follow-up work by Kelley, Lovett, and Meka (STOC 2024).
+  </p>
+  <p>This talk is based on a joint work with Yuval Filmus, Hamed Hatami, and Kaave Hosseini (FOCS 2024, full version: arXiv:2311.12248)</p>
+  </p>
 </details>
 
 </body>
