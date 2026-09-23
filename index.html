@@ -76,7 +76,13 @@
         text-align: left;
         color: rgb(41, 21, 176);
         font-weight: 600;
-        display: block;
+        display: list-item;
+        list-style-position: outside;
+        list-style-type: disclosure-closed;
+    }
+
+    details[open] > summary.schedule-item {
+        list-style-type: disclosure-open;
     }
 
     .schedule-item .title {
@@ -109,6 +115,17 @@
         cursor: pointer;
         font-weight: bold;
         color: #1f2430;
+        display: list-item;
+        list-style-position: outside;
+        list-style-type: disclosure-closed;
+    }
+
+    details[open] > summary {
+        list-style-type: disclosure-open;
+    }
+
+    summary::marker {
+        color: rgb(41, 21, 176);
     }
 
     details {
