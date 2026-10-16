@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="google-site-verification" content="RxXNGQ85Dbc4gdkR_Bqxh47zg2fO7qMhTdMBxIX2u_4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FOCS 2026 Quasirandomness Workshop</title>
-  </head>
-<html>
   <style>
     body {
       margin: 2.5% auto;
@@ -151,7 +150,86 @@
       margin-top: 0.5em;
     }
 
+    @media (max-width: 640px) {
+      body {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.25rem 1rem 2rem;
+        font-size: 1rem;
+        line-height: 1.65;
+      }
+
+      h1 {
+        font-size: clamp(1.75rem, 8vw, 2.25rem);
+        line-height: 1.15;
+      }
+
+      h2 {
+        font-size: 1.05rem;
+        line-height: 1.4;
+      }
+
+      #picture-div {
+        float: none;
+        width: 100%;
+        margin: 0;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      details {
+        margin: 0.65rem 0;
+        padding: 0.15rem 0.85rem;
+        border: 1px solid #e4e0f4;
+        border-radius: 0.65rem;
+        background: #fbfaff;
+      }
+
+      details:last-of-type {
+        margin-bottom: 2rem;
+      }
+
+      .schedule-item {
+        margin: 0;
+        padding: 0.75rem 0;
+        font-size: 1.05rem;
+        line-height: 1.4;
+      }
+
+      .schedule-item .speaker {
+        margin-top: 0.25rem;
+        font-size: 0.95rem;
+      }
+
+      details p {
+        margin: 0.6rem 0;
+        font-size: 0.98rem;
+      }
+
+      a {
+        overflow-wrap: anywhere;
+      }
+    }
+
+    @media (max-width: 360px) {
+      body {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+      }
+
+      details {
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
+      }
+    }
+
   </style>
+</head>
 <body>
 
 <h1>Algorithmic Perspectives on Quasirandomness</h1>
