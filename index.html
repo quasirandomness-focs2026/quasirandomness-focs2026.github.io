@@ -96,6 +96,13 @@
       margin-top: 0.1em;
     }
 
+    .media-links {
+      display: block;
+      font-size: 0.85em;
+      font-weight: 500;
+      margin-top: 0.15em;
+    }
+
     .schedule-entry {
         display: block;
         font-size: 1.2em;
@@ -245,24 +252,24 @@
 
 <h2 id="schedule">Schedule</h2>
 <details>
-  <summary class="schedule-item">12:30 - 1:15: <span class="title">Tutorial on Quasirandomness</span><span class="speaker">Cassandra Marcussen</span></summary>
+  <summary class="schedule-item">12:30 - 1:15: <span class="title">Tutorial on Quasirandomness</span><span class="speaker">Cassandra Marcussen<span class="media-links">[<a href="slides/Marcussen.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=1ZxdJDbuWEY&amp;list=PLLcO7EYg00bo">Video</a>]</span></span></summary>
   <p><strong>Abstract:</strong> In this tutorial, we introduce the theory of quasirandomness, with a particular focus on quasirandom graphs. In 1987, Thomason introduced the notion of a "jumbled" graph, capturing structural properties characteristic of random graphs. In 1989, Chung, Graham, and Wilson developed a unifying theory of quasirandom graph properties and their equivalences. We will begin by understanding these properties, the surprising relationships between them, and the simple conditions that characterize quasirandomness. We will then explore their implications, including connections to graph regularity. Finally, we will turn to quasirandomness beyond graphs, discussing analogous theories in other settings, such as groups and permutations.
 </p>
     <p>We will also introduce the framework of quality control (Marcussen, Rubinfeld, and Sudan, 2026) as an algorithmic example illustrating how quasirandom properties can be used to study new computational problems.</p>
 </details>
 <details>
-  <summary class="schedule-item">1:20 - 1:45: <span class="title">Graph Quasirandomness for Hypothesis Testing of Stochastic Block Models</span><span class="speaker">Kiril Bangachev</span></summary>
+  <summary class="schedule-item">1:20 - 1:45: <span class="title">Graph Quasirandomness for Hypothesis Testing of Stochastic Block Models</span><span class="speaker">Kiril Bangachev<span class="media-links">[<a href="slides/Bangachev.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=Ejx2Z8vIYpo&amp;list=PLLcO7EYg00bo">Video</a>]</span></span></summary>
   <p><strong>Abstract:</strong> The celebrated theorem of Chung, Graham, and Wilson on quasirandom graphs implies that if the 4-cycle and edge counts in a graph <strong>G</strong> are both close to their typical number in <strong>G(n,1/2)</strong>, then this also holds for the counts of subgraphs isomorphic to <strong>H</strong> for any <strong>H</strong> of constant size. We prove a similar statement where the notion of close is whether the given (signed) subgraph count can be used as a test between <strong>G(n,1/2)</strong> and a stochastic block model <strong>SBM</strong>.</p>
   <p>Quantitatively, this is related to approximately maximizing <strong>H &rarr; |&Phi;(H)|<sup>1/|V(H)|</sup></strong> where <strong>&Phi;(H)</strong> is the Fourier coefficient of <strong>SBM</strong>, indexed by subgraph <strong>H</strong>. This formulation turns out to be equivalent to approximately maximizing the partition function of a spin model over an alphabet given by the community labels in <strong>SBM</strong>.</p>
   <p>We resolve the approximate maximization when <strong>SBM</strong> satisfies one of four conditions: 1) the probability of an edge between any two vertices in different communities is exactly 1/2; 2) the probability of an edge between two vertices from any two communities is at least 1/2 (this case is also covered in a recent work of Yu, Zadik, and Zhang); 3) the probability of belonging to any given community is at least <strong>c</strong> for some universal constant <strong>c &gt; 0</strong>; 4) <strong>SBM</strong> has two communities. In each of these cases, we show that there is an approximate maximizer of <strong>H &rarr; |&Phi;(H)|<sup>1/|V(H)|</sup></strong> which is a star or a 4-cycle. This implies that if there exists a constant-degree polynomial test distinguishing <strong>G(n,1/2)</strong> and <strong>SBM</strong>, then the two distributions can also be distinguished via the signed count of a star or a 4-cycle. We conjecture that the same holds true for distinguishing <strong>G(n,1/2)</strong> and any graphon if we also add triangles.</p>
   <p><strong>Authors:</strong> Kiril Bangachev and Guy Bresler</p>
 </details>
 <details>
-  <summary class="schedule-item">1:45 - 2:10: <span class="title">k-Coloring in Average Sublinear Time via Quasirandomness</span><span class="speaker">Ted Pyne</span></summary>
+  <summary class="schedule-item">1:45 - 2:10: <span class="title">k-Coloring in Average Sublinear Time via Quasirandomness</span><span class="speaker">Ted Pyne<span class="media-links">[<a href="slides/Pyne.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=0gcmPf6kgu8&amp;list=PLLcO7EYg00bo">Video</a>]</span></span></summary>
   <p><strong>Abstract:</strong> We show that k-coloring a k-colorable graph can be done in expected time O(nk). Since almost all such graphs have &Omega;(n^2) edges, this is an average-case sublinear algorithm for a natural NP-complete problem. It turns out that a key to this algorithm is the ability to certify (with zero error) that a small random graph is uniquely k-colorable. I'll discuss the overall algorithm, and some details of how graph quasirandomness gives the key step.</p>
 </details>
 <details>
-  <summary class="schedule-item">2:10 - 2:35: <span class="title">Short cycle removal and applications in hardness of approximation</span><span class="speaker">Or Zamir</span></summary>
+  <summary class="schedule-item">2:10 - 2:35: <span class="title">Short cycle removal and applications in hardness of approximation</span><span class="speaker">Or Zamir<span class="media-links">[<a href="slides/Zamir.pdf">Slides</a>] [<a href="https://www.youtube.com/watch?v=78UyFc9d0DE&amp;list=PLLcO7EYg00bo">Video</a>]</span></span></summary>
   <p><strong>Abstract:</strong> We present a technique for efficiently removing almost all short cycles in a graph without unintentionally removing its triangles. Consequently, triangle finding problems do not become easy even in almost k-cycle-free graphs, for any constant k >= 4.</p>
   <p>Triangle finding is at the base of many conditional lower bounds in P, mainly for distance computation problems, and the existence of many 4- or 5-cycles in a worst-case instance had been the obstacle towards resolving major open questions.</p>
   <p>We use this to answer questions including: Are there distance oracles with m^(1+o(1)) preprocessing time and m^o(1) query time that achieve a constant approximation? Is there a linear-time algorithm for detecting a 4-cycle in a graph? etc. </p>
